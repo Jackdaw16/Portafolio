@@ -250,3 +250,70 @@ footer {
     }
   }
 }
+
+.cards-row-one{
+  display: flex;
+  flex-direction: row;
+
+  .card{
+    width: 17.8125em;
+    height: 20.875em;
+    margin: 0.75em 1.875em;
+    display: flex;
+    flex-direction: column;
+
+    .img-container{
+      width: 100%;
+      border-top-right-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      padding: 0.5em 0;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img{
+        height: 9em;
+      }
+    }
+
+    .text-container{
+      width: 100%;
+      background-color: #D2D2D2;
+      padding: 8px;
+
+      p{
+        color: #262626;
+        margin: 0;
+      }
+
+      .card-title{
+        font-weight: 400;
+        font-size: 1.25em;
+        padding: 8px;
+      }
+
+      .card-description{
+        font-weight: 300;
+        font-size: 0.875em;
+        padding: 8px;
+      }
+    }
+
+    .card-button{
+      width: 100%;
+      background-color: #352C72;
+      color: white;
+      border-bottom-right-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
+      text-decoration: none;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .card-button:hover{
+      background-color: #453992;
+    }
+
+  }
+}
