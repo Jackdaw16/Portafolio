@@ -16,6 +16,10 @@ html body {
   font-size: 16px;
 }
 
+.active {
+  border-top: 0.1875em solid white !important;
+}
+
 nav {
   color: white;
   width: 100%;
@@ -75,16 +79,16 @@ nav .nav_container .nav a:hover {
   background-color: #24282B;
   padding: 1.25em;
 }
-.main .container article {
+.main .container .information {
   display: flex;
   flex-direction: row;
   padding: 1.25em;
 }
-.main .container article img {
+.main .container .information img {
   width: 20%;
   border-radius: 0.5em;
 }
-.main .container article p {
+.main .container .information p {
   margin-left: 1em;
   font-size: 1.125em;
   color: #BBBBBB;
@@ -178,6 +182,52 @@ footer .networks a {
 footer .networks a img {
   width: 1.875em;
   height: 1.875em;
+}
+
+.subcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subcontainer p {
+  margin: 0;
+  color: white;
+}
+.subcontainer .header-one {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.subcontainer .header-one .contact-title {
+  font-size: 1.5625em;
+  margin-top: 0.9375em;
+  margin-bottom: 0.3125em;
+}
+.subcontainer .header-one .contact-text {
+  font-size: 1.125em;
+  padding: 0.125em 0;
+}
+.subcontainer .header-one form {
+  display: flex;
+  flex-direction: column;
+}
+.subcontainer .header-one form input, .subcontainer .header-one form textarea {
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-top: 0.25em;
+  margin-bottom: 0.6875em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+.subcontainer .header-one form input[type=submit] {
+  background-color: #7D3CDF;
+  color: white;
+}
+.subcontainer .header-one form textarea {
+  resize: none;
+  min-height: 9.5em;
 }
 
 /*# sourceMappingURL=index.css.map */

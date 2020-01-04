@@ -16,6 +16,10 @@ html{
   }
 }
 
+.active{
+  border-top: 0.1875em solid white!important;
+}
+
 nav{
   color: white;
   width: 100%;
@@ -77,7 +81,7 @@ nav{
     background-color: #24282B;
     padding: 1.25em;
     
-    article{
+    .information{
       display: flex;
       flex-direction: row;
       padding: 1.25em;
@@ -158,7 +162,7 @@ nav{
   }
 }
 
-footer{
+footer {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -167,27 +171,81 @@ footer{
   align-items: center;
   padding: 0.625em 0;
   background-color: #352C72;
-  box-shadow: 0 0 0.375em 0.1875em rgba(0,0,0,0.12);
+  box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
 
-  p{
+  p {
     color: #d4d4d4;
     font-size: 0.875em;
     margin: 0;
   }
 
-  .networks{
+  .networks {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-bottom: 1.25em;
-    a{
+
+    a {
       padding: 0.625em 0.9375em;
       border-radius: 0.5em;
       margin: 0 0.625em;
-      box-shadow: 0 0 0.375em 0.1875em rgba(0,0,0,0.12);
-      img{
+      box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
+
+      img {
         width: 1.875em;
         height: 1.875em;
+      }
+    }
+  }
+}
+.subcontainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p{
+    margin: 0;
+    color: white;
+  }
+
+  .header-one{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    .contact-title{
+      font-size: 1.5625em;
+      margin-top: 0.9375em;
+      margin-bottom: 0.3125em;
+    }
+
+    .contact-text{
+      font-size: 1.125em;
+      padding: 0.125em 0;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+
+      input, textarea{
+        border: none;
+        border-radius: 0.5em;
+        padding:  1em;
+        margin-top: 0.25em;
+        margin-bottom: 0.6875em;
+        font-family: "Roboto", sans-serif;
+        font-size: 1em;
+      }
+
+      input[type="submit"]{
+        background-color: #7D3CDF;
+        color: white;
+      }
+
+      textarea{
+        resize: none;
+        min-height: 9.5em;
       }
     }
   }
