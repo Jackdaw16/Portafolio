@@ -29,8 +29,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   background-color: #352C72;
-  -webkit-box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
 }
 nav .nav_container {
   width: 90%;
@@ -110,8 +109,7 @@ nav .nav_container .nav a:hover {
   padding: 1.25em;
   background-color: #31373D;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
 }
 .main .container .cards-main-row .card p {
   margin: 0;
@@ -285,6 +283,44 @@ footer .networks a img {
 }
 .cards-row-one .card .card-button:hover {
   background-color: #453992;
+}
+
+.project-information {
+  display: flex;
+  flex-direction: row;
+  padding: 1.25em;
+}
+.project-information .img-project-container {
+  width: 18.75em;
+  height: 15.8125em;
+  background-color: white;
+  padding: 1em;
+  margin: 0 1.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
+}
+.project-information .img-project-container img {
+  height: 100%;
+}
+.project-information .project-text-container {
+  display: flex;
+  flex-direction: column;
+}
+.project-information .project-text-container p {
+  margin: 0;
+}
+.project-information .project-text-container .project-title {
+  font-weight: 500;
+  font-size: 2em;
+  color: #BBBBBB;
+  padding: 8px;
+}
+.project-information .project-text-container .project-description {
+  font-weight: 300;
+  font-size: 1.125em;
+  line-height: 1.7;
+  padding: 8px;
+  color: #BBBBBB;
 }
 
 /*# sourceMappingURL=index.css.map */

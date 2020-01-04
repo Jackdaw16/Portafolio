@@ -29,8 +29,8 @@ nav{
   flex-direction: row;
   justify-content: center;
   background-color: #352C72;
-  -webkit-box-shadow: 0 0 0.375em 0.1875em rgba(0,0,0,0.12);
-  -moz-box-shadow: 0 0 0.375em 0.1875em rgba(0,0,0,0.12);
+  box-shadow: 0 0 0.375em 0.1875em rgba(0,0,0,0.12);
+
   .nav_container{
     width: 90%;
     max-width: 75em;
@@ -115,8 +115,7 @@ nav{
         padding: 1.25em;
         background-color: #31373D;
         border-radius: 0.5em;
-        -webkit-box-shadow: 0 0 0.375em 0.1875em rgba(0,0,0,0.12);
-        -moz-box-shadow: 0 0 0.375em 0.1875em rgba(0,0,0,0.12);
+        box-shadow: 0 0 0.375em 0.1875em rgba(0,0,0,0.12);
 
         p {
           margin: 0;
@@ -314,6 +313,49 @@ footer {
     .card-button:hover{
       background-color: #453992;
     }
+  }
+}
 
+.project-information{
+  display: flex;
+  flex-direction: row;
+  padding: 1.25em;
+
+  .img-project-container{
+    width:  18.75em;
+    height: 15.8125em;
+    background-color: white;
+    padding: 1em;
+    margin: 0 1.50em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.375em 0.1875em rgba(0, 0, 0, 0.12);
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .project-text-container{
+    display: flex;
+    flex-direction: column;
+
+    p{
+      margin: 0;
+    }
+
+    .project-title{
+      font-weight: 500;
+      font-size: 2em;
+      color: #BBBBBB;
+      padding: 8px;
+    }
+
+    .project-description{
+      font-weight: 300;
+      font-size: 1.125em;
+      line-height: 1.7;
+      padding: 8px;
+      color: #BBBBBB;
+    }
   }
 }
